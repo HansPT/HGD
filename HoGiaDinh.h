@@ -20,7 +20,7 @@ public:
 
 
     HoGiaDinh();
-    HoGiaDinh(std::string houseNumber, unsigned int familyMember);
+    HoGiaDinh(std::string houseNumber, unsigned int familyMember, std::vector<Nguoi> human);
     ~HoGiaDinh();
 };
 

@@ -53,13 +53,13 @@ int main()
                     std::cin >> ID;
                     HumanList.push_back(Nguoi(name,age,job,ID));
                 }
-                KP->addHoGiaDinh(HoGiaDinh(houseNumber,familyMember));
+                KP->addHoGiaDinh(HoGiaDinh(houseNumber,familyMember,HumanList));
                 // KP->print();
                 
             }
             
         }
-        KP->KhuPhoprint();
+        // KP->KhuPhoprint();
             break;
         case SHOW:
         {

@@ -27,23 +27,22 @@ void HoGiaDinh::HGDprint()
     std::cout << "---------------------\n";
     std::cout << "House Number:" << m_HouseNumber << '\n';
     std::cout << "Family Member: " << m_FamilyMember << '\n';
-    Nguoi a;
-    for (unsigned int i = 0; i < m_Human.size(); i++)
+    std::cout << "size:" << m_Human.size() << '\n';
+    for (Nguoi hum : m_Human)
     {
         /* code */
-        a.NguoiPrint();
+        hum.NguoiPrint();
     }
-    
-    
 }
 
 
 
 HoGiaDinh::HoGiaDinh() = default;
 
-HoGiaDinh::HoGiaDinh(std::string houseNumber, unsigned int familyMember)
+HoGiaDinh::HoGiaDinh(std::string houseNumber, unsigned int familyMember, std::vector<Nguoi> human)
 {
     this->setFamilyMember(familyMember);
     this->setHouseNumber(houseNumber);
+    m_Human = human;
 }
 HoGiaDinh::~HoGiaDinh() = default;
